@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Checking</title>
+    <style>
+        body {
+          background-image: url('img_girl.jpg');
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hello Welcome To The page</h1>
+
+    <form action='/visualize'>
+        <input type='submit' value="Visual Report">    
+    </form> <br>
+    <h3 style="text-align: center;">Please Enter Your Education Detials</h3>
+
+    <form action="/calculate" method="POST">
+        <p><b>GRE Score :</b></p>
+        <input type ='number' name="gre">
+        <p><b>TOFL Score :</b></p>
+        <input type ='number' name="tofl">
+        <p><b>University Ranking :</b></p>
+        <input type ='number' name="university">
+        <p><b>SOP Score :</b></p>
+        <input type ='number' name="sop">
+        <p><b>LOR Score :</b></p>
+        <input type ='number' name="lor">
+        <p><b>CGPA :</b></p>
+        <input type ='number' name="cgpa">
+        <p><b>research :</b></p>
+        <input type ='number' name="research">
+        <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>{{chance}}</p>
+    
+</body>
+</html>
